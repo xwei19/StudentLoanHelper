@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.xiaole.studentloanhelper.AddUpdateLoan">
+
+    <TextView android:text="@string/add_update_loan" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#0000FF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView android:text="Academic year:" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-2015"
+            android:minWidth="150dp"
+            android:id="@+id/timeText" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/periodText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+            android:id="@+id/fall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fall"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/winter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Winter" />
+        <RadioButton
+            android:id="@+id/summer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summer" />
+        <RadioButton
+            android:id="@+id/fallAndWinter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fall and Winter" />"
+</RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">"
+
+    <TextView android:text="School Name:" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schoolText"
+            android:minWidth="150dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">"
+
+    <TextView android:text="Program:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/programText"
+            android:minWidth="150dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView android:text="Actually Received Loan:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loanText"
+            android:minWidth="150dp" />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView android:text="Actually Received Grant:" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grantText"
+        android:minWidth="150dp"/>
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add"
+    android:id="@+id/addButton"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to List"
+            android:id="@+id/backButton"/>
+
+     </LinearLayout>
+
+</LinearLayout>

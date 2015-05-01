@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/welcome_text"
+        android:textColor="#000000"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valueOfGrant"
+        android:src="@drawable/button1"
+        android:onClick="clickToSurvey"
+        android:background="@null"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listLoan"
+        android:onClick="clickToList"
+    android:src="@drawable/button2"
+        android:background="@null"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grantCalculator"
+        android:onClick="clickToCalculator"
+        android:src="@drawable/button3"
+        android:background="@null"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/officalWebsits"
+        android:onClick="clickToWebsits"
+        android:src="@drawable/button3"
+        android:background="@null"
+        android:layout_centerHorizontal="true"/>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.xiaole.studentloanhelper.CalculatePayment">
+
+    <TextView android:text="@string/title_activity_calculate_payment" android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textColor="#0000ff"
+        android:layout_gravity="center"/>
+
+    <TextView android:text="Your last application time period: " android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+    <TextView android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/lastTime"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+        <TextView android:text="Your total student Loan: " android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalLoan"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView android:text="Your total grant: " android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalGrant"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+    <View
+        android:layout_height="2dp"
+        android:layout_width="fill_parent"
+        android:background="#123456" />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+        <TextView android:text="Your payment will start: " android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startDay"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+        <TextView android:text="Total payment: " android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalPayment"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+        <TextView android:text="Every month payment: " android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment"/>
+    </LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Back to list"
+    android:id="@+id/back"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start alarm"
+        android:id="@+id/alarm"/>
+
+</LinearLayout>
